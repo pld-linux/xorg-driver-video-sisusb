@@ -1,12 +1,12 @@
 Summary:	X.org video driver for SiS video chips connected via a Net2280-based USB dongle
 Summary(pl):	Sterownik obrazu X.org dla uk³adów SiS pod³±czonych poprzez przej¶ciówkê USB Net2280
 Name:		xorg-driver-video-sisusb
-Version:	0.7.1
+Version:	0.7.1.1
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/driver/xf86-video-sisusb-%{version}.tar.bz2
-# Source0-md5:	906394f9d341e57eb062b68d11d173b1
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/driver/xf86-video-sisusb-%{version}.tar.bz2
+# Source0-md5:	4ff8bc0783c0568e94d5fa2704483d27
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -19,7 +19,7 @@ BuildRequires:	xorg-proto-videoproto-devel
 BuildRequires:	xorg-proto-xextproto-devel
 BuildRequires:	xorg-proto-xf86miscproto-devel
 BuildRequires:	xorg-proto-xineramaproto-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.1
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRequires:	xorg-xserver-server-devel >= 0.99.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -56,8 +56,7 @@ Uwaga: wymaga sterownika j±dra Linuksa (za³±czonego w wersji Linuksa
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	drivermandir=%{_mandir}/man4
+	DESTDIR=$RPM_BUILD_ROOT
 
 rm -f $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
 
@@ -68,4 +67,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/sisusb_drv.so
-%{_mandir}/man4/sisusb.4x*
+%{_mandir}/man4/sisusb.4*
