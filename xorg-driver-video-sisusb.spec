@@ -1,5 +1,5 @@
 Summary:	X.org video driver for SiS video chips connected via a Net2280-based USB dongle
-Summary(pl):	Sterownik obrazu X.org dla uk³adów SiS pod³±czonych poprzez przej¶ciówkê USB Net2280
+Summary(pl.UTF-8):   Sterownik obrazu X.org dla ukÅ‚adÃ³w SiS podÅ‚Ä…czonych poprzez przejÅ›ciÃ³wkÄ™ USB Net2280
 Name:		xorg-driver-video-sisusb
 Version:	0.8.1
 Release:	0.1
@@ -31,13 +31,13 @@ USB dongle. It supports SiS315E/PRO video chipset.
 Note: it requires a Linux kernel driver (included in Linux 2.6.12 and
 later).
 
-%description -l pl
-Sterownik obrazu X.org dla uk³adów SiS pod³±czonych poprzez
-przej¶ciówkê USB opart± na uk³adzie Net2280. Obs³uguje uk³ad graficzny
+%description -l pl.UTF-8
+Sterownik obrazu X.org dla ukÅ‚adÃ³w SiS podÅ‚Ä…czonych poprzez
+przejÅ›ciÃ³wkÄ™ USB opartÄ… na ukÅ‚adzie Net2280. ObsÅ‚uguje ukÅ‚ad graficzny
 SiS315E/PRO.
 
-Uwaga: wymaga sterownika j±dra Linuksa (za³±czonego w wersji Linuksa
-2.6.12 i pó¼niejszych).
+Uwaga: wymaga sterownika jÄ…dra Linuksa (zaÅ‚Ä…czonego w wersji Linuksa
+2.6.12 i pÃ³Åºniejszych).
 
 %prep
 %setup -q -n xf86-video-sisusb-%{version}
