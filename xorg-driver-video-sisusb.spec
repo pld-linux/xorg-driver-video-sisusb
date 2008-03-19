@@ -1,12 +1,12 @@
 Summary:	X.org video driver for SiS video chips connected via a Net2280-based USB dongle
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów SiS podłączonych poprzez przejściówkę USB Net2280
 Name:		xorg-driver-video-sisusb
-Version:	0.8.1
+Version:	0.9.0
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-sisusb-%{version}.tar.bz2
-# Source0-md5:	cbd669507e4aa35e468905f09b546333
+# Source0-md5:	7b1f5465f423a859f306f4f1d6306a1b
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
